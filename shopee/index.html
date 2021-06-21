@@ -8,7 +8,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <title>Hello, world!</title>
   </head>
   <body>
@@ -24,53 +25,17 @@
 
 </p>
     <a href="https://tranbaocuong.github.io/SALE-OFF-HUB/shopee/" class="btn btn-primary">Go somewhere</a>
+    <center>
+    <div class="input-group flex-nowrap">
+  <span class="input-group-text" id="addon-wrapping">@</span>
+  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+    </center>
   </div>
 </div>
 
   
-<div class="list-group">
-  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">List group item heading</h5>
-      <small>3 days ago</small>
-    </div>
-    <p class="mb-1">Some placeholder content in a paragraph.</p>
-    <small>And some small print.</small>
-  </a>
-  
-  
-  
-  
-</div>
-  
-  
- <script type="text/javascript">
-$(document).ready(function () {
-    $.ajax({ 
-        url: 'shopee_data.json', 
-        type: 'GET',
-        data: { get_param: 'value' }, 
-        success: function (data) { 
-         for (var i=0;i<data.length;++i)
-         {
-         $('#cand').append("
-                           
-      <a href="#" class="list-group-item list-group-item-action">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">"+ data[i].name_promote + "<List group item heading</h5>
-      <small class="text-muted">3 days ago</small>
-    </div>
-    <p class="mb-1">Some placeholder content in a paragraph.</p>
-    <small class="text-muted">And some muted small print.</small>
-  </a>
-               
-                           
-                          ");
-         }
-        }
-    });
-});
-</script> 
+
   
   
         <!-- END CONTAINER -->
