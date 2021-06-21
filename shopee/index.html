@@ -23,35 +23,26 @@
     <p class="card-text">Shopee Việt Nam | Mua và Bán Trên Ứng Dụng Di Động Hoặc Website. Ở Nhà Không Khó. Tech Zone - Siêu Thị Điện Tử. Gì Cũng Rẻ - Từ 1K. Hoàn Xu 20% - Đơn Từ 0Đ. Shopee Số Gì Đây. Freeship Xtra - Voucher 60K. Hàng Hiệu -50% - Voucher 500K. Nạp Thẻ, Dịch Vụ & Phim.
 
 </p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="https://tranbaocuong.github.io/SALE-OFF-HUB/shopee/" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
 
   
-  <ol class="list-group list-group-numbered">
-  <li class="list-group-item d-flex justify-content-between align-items-start">
-    <div class="ms-2 me-auto">
-      <div class="fw-bold">Subheading</div>
-      Cras justo odio
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">List group item heading</h5>
+      <small>3 days ago</small>
     </div>
-    <span class="badge bg-primary rounded-pill">14</span>
-  </li>
-  <li class="list-group-item d-flex justify-content-between align-items-start">
-    <div class="ms-2 me-auto">
-      <div class="fw-bold">Subheading</div>
-      Cras justo odio
-    </div>
-    <span class="badge bg-primary rounded-pill">14</span>
-  </li>
-  <li class="list-group-item d-flex justify-content-between align-items-start">
-    <div class="ms-2 me-auto">
-      <div class="fw-bold">Subheading</div>
-      Cras justo odio
-    </div>
-    <span class="badge bg-primary rounded-pill">14</span>
-  </li>
-</ol>
-
+    <p class="mb-1">Some placeholder content in a paragraph.</p>
+    <small>And some small print.</small>
+  </a>
+  
+  
+  
+  
+</div>
+  
   
  <script type="text/javascript">
 $(document).ready(function () {
@@ -62,7 +53,19 @@ $(document).ready(function () {
         success: function (data) { 
          for (var i=0;i<data.length;++i)
          {
-         $('#cand').append('<div class="name">data[i].name</>');
+         $('#cand').append("
+                           
+      <a href="#" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">"+ data[i].name_promote + "<List group item heading</h5>
+      <small class="text-muted">3 days ago</small>
+    </div>
+    <p class="mb-1">Some placeholder content in a paragraph.</p>
+    <small class="text-muted">And some muted small print.</small>
+  </a>
+               
+                           
+                          ");
          }
         }
     });
